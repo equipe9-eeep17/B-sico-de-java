@@ -29,11 +29,12 @@ public class Tela3 extends javax.swing.JFrame {
 
         jLabel2 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel2.setIcon(new javax.swing.ImageIcon("D:\\imagens projeto java\\icons\\back-button_318-69320.jpg")); // NOI18N
         jLabel2.setToolTipText("Clique aqui para voltar");
         jLabel2.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -42,8 +43,16 @@ public class Tela3 extends javax.swing.JFrame {
         });
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
-        jLabel1.setText("jLabel1");
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 400, 300));
+        jLabel1.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        jLabel1.setText("<html>Uma Introdução à Programação Visual Após apresentarmos os conceitos estruturais principais de linguagem, a idéia de orientação a objeto e as classes que mais utilizaremos como String e Numbers, passaremos agora a focar numa programação mais voltada a práticas possíveis, demonstrando classes com funções mais avançadas e importantes, além de abandornamos um pouco o visual de console e partirmos para a programação visual de Java.  Para introduzir esta nova fase, iniciaremos descrevendo um pouco sobre JOptionPane do pacote visual Swing.  A classe JOptionPane nos proporciona uma série de métodos estáticos que ao serem invocados criam caixas de diálogos simples e objetivas.  Para usar JOptionPane temos sempre que importar o pacote javax.swing.JOptionPane primeiro.");
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 20, 390, 290));
+
+        jLabel3.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel3.setText("INTRODUÇÃO");
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 0, 110, 31));
+
+        jLabel4.setIcon(new javax.swing.ImageIcon("C:\\imagens projeto java\\java\\photo.jpg")); // NOI18N
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 600, 310));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -94,5 +103,7 @@ public class Tela3 extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
     // End of variables declaration//GEN-END:variables
 }
