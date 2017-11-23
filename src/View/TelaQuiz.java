@@ -5,6 +5,8 @@
  */
 package View;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author lucas
@@ -17,7 +19,6 @@ public class TelaQuiz extends javax.swing.JFrame {
     public TelaQuiz() {
         initComponents();
     }
-
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -27,41 +28,102 @@ public class TelaQuiz extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jTextField1 = new javax.swing.JTextField();
-        jToggleButton1 = new javax.swing.JToggleButton();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
+        resposta = new javax.swing.JTextField();
+        v1 = new javax.swing.JToggleButton();
+        campo = new javax.swing.JTextField();
+        resposta2 = new javax.swing.JToggleButton();
         jLabel3 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-        getContentPane().add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 350, 620, -1));
 
-        jToggleButton1.setText("Verificar");
-        getContentPane().add(jToggleButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 350, -1, -1));
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(78, 0, -1, 459));
-
-        jLabel1.setIcon(new javax.swing.ImageIcon("D:\\imagens projeto java\\icons\\adssdad.jpg")); // NOI18N
-        jLabel1.setToolTipText("Clique aqui para voltar");
-        jLabel1.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel1MouseClicked(evt);
+        resposta.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                respostaActionPerformed(evt);
             }
         });
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+        getContentPane().add(resposta, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 50, 220, -1));
 
-        jLabel3.setIcon(new javax.swing.ImageIcon("D:\\imagens projeto java\\icons\\tela\\tela 1.jpg")); // NOI18N
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 750, 410));
+        v1.setText("Verificar");
+        v1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                v1ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(v1, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 50, -1, -1));
+        getContentPane().add(campo, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 120, 230, -1));
+
+        resposta2.setText("verificar");
+        resposta2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                resposta2ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(resposta2, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 120, -1, -1));
+
+        jLabel3.setText("(1)Qual o pacote visual swing?");
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 20, 460, 30));
+
+        jLabel5.setText("(2) O Que sempre devemos fazer para começar a importar um projeto no JOptionPane?");
+        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 80, 550, 30));
+
+        jLabel2.setIcon(new javax.swing.ImageIcon("D:\\imagens projeto java\\icons\\back-button_318-69320.jpg")); // NOI18N
+        jLabel2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel2MouseClicked(evt);
+            }
+        });
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 40, 40));
+
+        jLabel6.setIcon(new javax.swing.ImageIcon("C:\\Users\\lucas\\Desktop\\back-button_318-69320.jpg")); // NOI18N
+        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 360, 40, 40));
+
+        jLabel4.setIcon(new javax.swing.ImageIcon("D:\\imagens projeto java\\icons\\tela\\tela 1.jpg")); // NOI18N
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 750, 400));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jLabel1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel1MouseClicked
-         Tela2 t3=new Tela2();
+    private void v1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_v1ActionPerformed
+      String c;
+        c=resposta.getText();
+        if (c.equals("JOptionPane")){
+            JOptionPane.showMessageDialog(null,"muito bem você acertou");
+            }else{
+            JOptionPane.showMessageDialog(null, "resposta errada");
+        }   // TODO add your handling code here:
+    }//GEN-LAST:event_v1ActionPerformed
+
+    private void respostaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_respostaActionPerformed
+         String c;
+        c=resposta.getText();
+        if (c.equals("JOptionPane")){
+            JOptionPane.showMessageDialog(null,"muito bem você acertou");
+            }else{
+            JOptionPane.showMessageDialog(null, "resposta errada");
+        }   // TODO add your handling code here:
+    }//GEN-LAST:event_respostaActionPerformed
+
+    private void resposta2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_resposta2ActionPerformed
+        String d;
+        d=campo.getText();
+        if (d.equals("javax.swing.JOptionPane")){
+            JOptionPane.showMessageDialog(null,"acertou");
+        }else{
+            JOptionPane.showMessageDialog(null, "resposta errada estude mais uma vez");
+        }
+    }//GEN-LAST:event_resposta2ActionPerformed
+
+    private void jLabel2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel2MouseClicked
+        Tela2 t3=new Tela2();
         this.dispose();
         t3.setLocationRelativeTo(null);
         t3.setVisible(true);
-    }//GEN-LAST:event_jLabel1MouseClicked
+    }//GEN-LAST:event_jLabel2MouseClicked
 
     /**
      * @param args the command line arguments
@@ -99,10 +161,14 @@ public class TelaQuiz extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel jLabel1;
+    private javax.swing.JTextField campo;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JToggleButton jToggleButton1;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JTextField resposta;
+    private javax.swing.JToggleButton resposta2;
+    private javax.swing.JToggleButton v1;
     // End of variables declaration//GEN-END:variables
 }

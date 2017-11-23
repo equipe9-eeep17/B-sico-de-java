@@ -34,8 +34,8 @@ public class TelaLogin extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         campoNome = new javax.swing.JTextField();
-        botaoEntrar = new javax.swing.JToggleButton();
         jLabel2 = new javax.swing.JLabel();
+        botaoEntrar = new javax.swing.JToggleButton();
         jLabel3 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -59,6 +59,11 @@ public class TelaLogin extends javax.swing.JFrame {
         });
         getContentPane().add(campoNome, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 270, 189, -1));
 
+        jLabel2.setFont(new java.awt.Font("Arial", 3, 18)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel2.setText("Vamos Começar...");
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 210, -1, -1));
+
         botaoEntrar.setBackground(new java.awt.Color(153, 153, 153));
         botaoEntrar.setText("Entrar");
         botaoEntrar.addActionListener(new java.awt.event.ActionListener() {
@@ -68,12 +73,7 @@ public class TelaLogin extends javax.swing.JFrame {
         });
         getContentPane().add(botaoEntrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 270, -1, -1));
 
-        jLabel2.setFont(new java.awt.Font("Arial", 3, 18)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel2.setText("Vamos Começar...");
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 210, -1, -1));
-
-        jLabel3.setIcon(new javax.swing.ImageIcon("D:\\imagens projeto java\\java\\java_capa.jpg")); // NOI18N
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/java_capa.jpg"))); // NOI18N
         getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, 0, 760, 450));
 
         pack();

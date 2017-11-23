@@ -56,7 +56,7 @@ public class Tela2 extends javax.swing.JFrame {
         jLabel6.setText("Variaveis");
         getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 100, -1, -1));
 
-        jLabel3.setIcon(new javax.swing.ImageIcon("D:\\imagens projeto java\\java\\introducao.png")); // NOI18N
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/introducao.png"))); // NOI18N
         jLabel3.setToolTipText("Clique para acessar a introdução");
         jLabel3.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -65,7 +65,7 @@ public class Tela2 extends javax.swing.JFrame {
         });
         getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 50, 50));
 
-        jLabel4.setIcon(new javax.swing.ImageIcon("D:\\imagens projeto java\\java\\variavel1.png")); // NOI18N
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/variavel1.png"))); // NOI18N
         jLabel4.setToolTipText("clique para acessar variaveis");
         jLabel4.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -74,7 +74,7 @@ public class Tela2 extends javax.swing.JFrame {
         });
         getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 80, 50, -1));
 
-        jLabel5.setIcon(new javax.swing.ImageIcon("D:\\imagens projeto java\\java\\metodos1.png")); // NOI18N
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/metodos1.png"))); // NOI18N
         jLabel5.setToolTipText("clique para acessar os metodos");
         jLabel5.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -83,7 +83,7 @@ public class Tela2 extends javax.swing.JFrame {
         });
         getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 150, -1, -1));
 
-        jLabel2.setIcon(new javax.swing.ImageIcon("D:\\imagens projeto java\\java\\condicional1.png")); // NOI18N
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/condicional1.png"))); // NOI18N
         jLabel2.setToolTipText("clique para acessar as condicionais");
         jLabel2.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -101,7 +101,7 @@ public class Tela2 extends javax.swing.JFrame {
         });
         getContentPane().add(jToggleButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 230, 301, 46));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon("D:\\imagens projeto java\\java\\java-logo.jpg")); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/java-logo.jpg"))); // NOI18N
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 610, 280));
 
         pack();
@@ -109,6 +109,7 @@ public class Tela2 extends javax.swing.JFrame {
 
     private void jToggleButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton2ActionPerformed
         TelaQuiz t7=new TelaQuiz();
+        t7.setSize(756, 400);
         t7.setVisible(true);
         t7.setLocationRelativeTo(null);
         this.dispose();
